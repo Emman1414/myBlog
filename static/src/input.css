@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+body {
+    @apply font-poppins overflow-x-hidden bg-black text-white;
+  }
+  /* .container {
+    @apply max-w-[1600px] w-full px-4 mx-auto;
+  } */
+  /* h1 {
+    @apply text-[70px];
+  }
+  h2 {
+    @apply text-[33px];
+  }
+  h3 {
+    @apply text-[24px];
+  }
+  h4 {
+    @apply text-[16px];
+  }
+  h5 {
+    @apply text-[12px];
+  }
+  h6 {
+    @apply text-[10px];
+  }
+  p {
+    @apply text-[16px];
+  } */
+}
+
+@layer components{
+
+
+/* BANNER RIGHT */
+.small{
+    @apply flex flex-row gap-4 mb-4 px-4 lg:px-0; 
+}
+.small p{
+  @apply font-bold text-[18px] mb-2;
+}
+.small img{
+    @apply w-full;
+}
+.small a{
+    @apply text-xs;
+}
+
+
+/* LATEST STORIES */
+
+.card{
+    @apply flex flex-col px-4 lg:px-0;
+}
+.card img{
+    @apply w-full object-cover h-[25rem];
+}
+.card h2{
+    @apply text-[23px] font-bold;
+}
+.card p{
+    @apply text-[18px] py-4;
+}
+
+/* FEATURE NEW */
+
+/* BOXES */
+
+.box{
+    @apply flex flex-col lg:flex-row gap-3 mb-5;
+}
+.box img{
+    @apply w-full h-[15rem] object-cover;
+}
+.box h2{
+    @apply text-[22px] lg:text-[25px] font-bold;
+}
+.box p{
+    @apply lg:text-[15px] lg:text-[17px] opacity-55;
+}
+
+/* WORDS */
+.words{
+    @apply mb-[3rem] border-b-[0.1rem] pb-2 border-black;
+}
+.words h2{
+    @apply font-bold;
+}
+
+/* THE SUN */
+
+.toggle__theme button{
+    @apply text-[25px];
+}
+
+/* FOOTER */
+.footer__wrapper li a{
+    @apply text-[15px] lg:text-[20px]  hover:border-b-2 leading-3;
+}
+
+
+/* REPEATABLE PATTERNS */
+.date{
+    @apply opacity-50 font-poppins;
+}
+.read{
+    @apply text-white font-poppins hover:border-b-[0.1rem] text-[14px];
+}
+}
+
+:root{
+    --dark: "#000",
+    --light: "#fff",
+}
+
+body.light{
+    background-color: var(--dark) !important;
+    color: var(--light) !important;
+}
